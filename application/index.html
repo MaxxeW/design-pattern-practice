@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Design Pattern Practices</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vendor/bootstrap.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">JS Design Pattern Player</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 main">
+                <div class="jumbotron">
+                    <h1 id="player-title">waiting...</h1>
+                    <!-- <p>Track Description</p> -->
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-primary" id="player-button-play">
+                            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                            Play
+                        </button>
+                    </div>
+                    <h2 class="sub-header">Queue</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Title</th>
+                                    <th>Duration</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tracks">
+                                <!-- <tr>
+                                    <td>1</td>
+                                    <td>Nice</td>
+                                    <td>1:23</td>
+                                    <td>
+                                        <button class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                                        <button class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+                                    </td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
